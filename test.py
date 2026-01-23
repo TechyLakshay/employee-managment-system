@@ -1,26 +1,12 @@
-# import logging
-
-
-
-
-# name = 'GFG'
-# logging.error('%s raised an error', name)
-# logging.info("this is the info")
-# logging.debug('code is debugged')
-# logging.error("need to fix the code")
-# logging.critical('need to fix asap')
-
 import logging
+
 
 logging.basicConfig(filename="newfile.log",
                     format='%(asctime)s %(levelname)s: %(message)s',
                     filemode='w')
 
 logger = logging.getLogger()
-logger.setLevel(logging.DEBUG)
+logger.setLevel(logging.INFO)
+age = 22
 
-logger.debug("Harmless debug message")
-logger.info("Just an information")
-logger.warning("Its a warning")
-logger.error("Did you try to divide by zero?")
-logger.critical("Internet is down")
+logging.debug("The value of age is %d", age)

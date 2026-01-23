@@ -1,5 +1,1 @@
-2026-01-21 16:23:53,022 DEBUG: Harmless debug message
-2026-01-21 16:23:53,022 INFO: Just an information
-2026-01-21 16:23:53,022 WARNING: Its a warning
-2026-01-21 16:23:53,022 ERROR: Did you try to divide by zero?
-2026-01-21 16:23:53,022 CRITICAL: Internet is down
+2026-01-23 13:39:13,824 DEBUG: The value of age is 22

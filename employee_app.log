@@ -1,0 +1,32 @@
+2026-01-23 14:40:18,822 | DEBUG | employee_app | Fetching employees | user_id=system | system_id=employee_api | correlation_id=8213fd89-fd02-496b-8575-38cd4f6ac1dd
+2026-01-23 14:40:18,831 | INFO | employee_app.app.database | Database connection established
+2026-01-23 14:40:18,833 | INFO | employee_app | Fetched 2 employees | correlation_id=8213fd89-fd02-496b-8575-38cd4f6ac1dd
+2026-01-23 14:40:18,834 | DEBUG | employee_app | DB closed for get_all_employees | correlation_id=8213fd89-fd02-496b-8575-38cd4f6ac1dd
+2026-01-23 14:47:39,227 | DEBUG | employee_app | Fetching employees | user_id=system | system_id=employee_api | correlation_id=5abf801f-1aa5-4b6f-a463-a364fe2bf77b
+2026-01-23 14:47:39,239 | INFO | employee_app.app.database | Database connection established
+2026-01-23 14:47:39,241 | INFO | employee_app | Fetched 2 employees | correlation_id=5abf801f-1aa5-4b6f-a463-a364fe2bf77b
+2026-01-23 14:47:39,242 | DEBUG | employee_app | DB closed for get_all_employees | correlation_id=5abf801f-1aa5-4b6f-a463-a364fe2bf77b
+2026-01-23 14:48:04,271 | DEBUG | employee_app | Updating employee EMP002 | user_id=system | correlation_id=e52568f9-52d5-429e-a1f0-2ca938b06960
+2026-01-23 14:48:04,279 | INFO | employee_app.app.database | Database connection established
+2026-01-23 14:48:04,286 | WARNING | employee_app | No employee found | employee_id=EMP002 | correlation_id=e52568f9-52d5-429e-a1f0-2ca938b06960
+2026-01-23 14:48:04,287 | DEBUG | employee_app | DB closed for update_employee | correlation_id=e52568f9-52d5-429e-a1f0-2ca938b06960
+2026-01-23 14:48:22,844 | DEBUG | employee_app | Updating employee EMP002 | user_id=system | correlation_id=5171c0d1-f7df-4761-bb96-abb30be34f08
+2026-01-23 14:48:22,851 | INFO | employee_app.app.database | Database connection established
+2026-01-23 14:48:22,853 | WARNING | employee_app | No employee found | employee_id=EMP002 | correlation_id=5171c0d1-f7df-4761-bb96-abb30be34f08
+2026-01-23 14:48:22,854 | DEBUG | employee_app | DB closed for update_employee | correlation_id=5171c0d1-f7df-4761-bb96-abb30be34f08
+2026-01-23 14:48:39,901 | DEBUG | employee_app | Deleting employee EMP002 | user_id=system | correlation_id=55355f96-2fea-42d6-9778-9b25407e2888
+2026-01-23 14:48:39,911 | INFO | employee_app.app.database | Database connection established
+2026-01-23 14:48:39,937 | INFO | employee_app | Employee deleted | employee_id=EMP002 | correlation_id=55355f96-2fea-42d6-9778-9b25407e2888
+2026-01-23 14:48:39,938 | DEBUG | employee_app | DB closed for delete_employee | correlation_id=55355f96-2fea-42d6-9778-9b25407e2888
+2026-01-23 14:49:17,981 | DEBUG | employee_app | Updating employee EMP003 | user_id=system | correlation_id=f4a14ea7-a010-4197-b145-54816af19636
+2026-01-23 14:49:17,992 | INFO | employee_app.app.database | Database connection established
+2026-01-23 14:49:18,001 | INFO | employee_app | Employee updated | employee_id=EMP003 | correlation_id=f4a14ea7-a010-4197-b145-54816af19636
+2026-01-23 14:49:18,002 | DEBUG | employee_app | DB closed for update_employee | correlation_id=f4a14ea7-a010-4197-b145-54816af19636
+2026-01-23 14:49:47,534 | DEBUG | employee_app | Creating employee 3122 | user_id=system | system_id=employee_api | correlation_id=e8b2353d-a8f6-4626-a253-368e804552a6
+2026-01-23 14:49:47,542 | INFO | employee_app.app.database | Database connection established
+2026-01-23 14:49:47,563 | INFO | employee_app | Employee created | employee_id=3122 | correlation_id=e8b2353d-a8f6-4626-a253-368e804552a6
+2026-01-23 14:49:47,564 | DEBUG | employee_app | DB closed for create_employee | correlation_id=e8b2353d-a8f6-4626-a253-368e804552a6
+2026-01-23 14:53:39,440 | DEBUG | employee_app | Deleting employee EMP0022w | user_id=system | correlation_id=1a05b06f-365e-49f7-a1be-2bbf458dc3e3
+2026-01-23 14:53:39,447 | INFO | employee_app.app.database | Database connection established
+2026-01-23 14:53:39,449 | WARNING | employee_app | No employee found to delete | employee_id=EMP0022w | correlation_id=1a05b06f-365e-49f7-a1be-2bbf458dc3e3
+2026-01-23 14:53:39,449 | DEBUG | employee_app | DB closed for delete_employee | correlation_id=1a05b06f-365e-49f7-a1be-2bbf458dc3e3
