@@ -21,7 +21,7 @@ def create_employee(employee, user_id="system"):
         (employee_id, name, age, department, manager_name, email, salary)
         VALUES (%s, %s, %s, %s, %s, %s, %s)
         """
-
+    
         cursor.execute(
             query,
             (
