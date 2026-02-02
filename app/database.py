@@ -15,9 +15,9 @@ def get_db_connection():
             database="employee_db"
         )
         logger.info("Database connection established")
-        return connection, correlation_id
+        return connection
 
     except Error as e:
         logger.error(f"Database connection failed: {e}")
-        return None, correlation_id
+        return None
 

@@ -1,0 +1,5 @@
+2026-02-02 00:03:54,675 | INFO | employee_app.app.main | Succesfully establish connection to the API
+2026-02-02 00:04:44,279 | DEBUG | employee_app | Deleting employee EMP003 | user_id=system | correlation_id=aca6821f-31d1-4c06-8436-0e3daf38f1ee
+2026-02-02 00:04:44,403 | INFO | employee_app.app.database | Database connection established
+2026-02-02 00:04:44,417 | INFO | employee_app | Employee deleted | employee_id=EMP003 | correlation_id=aca6821f-31d1-4c06-8436-0e3daf38f1ee
+2026-02-02 00:04:44,419 | DEBUG | employee_app | DB closed for delete_employee | correlation_id=aca6821f-31d1-4c06-8436-0e3daf38f1ee
