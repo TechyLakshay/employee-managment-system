@@ -1,0 +1,7 @@
+2026-02-03 11:46:16,489 | INFO | app.services.employee_service | trace_id=f469ed129b43d9d6a9ac636040fd3249 | span_id=f7d721f50f508e95 | correlation_id=4541222e-4bf9-4006-8cb4-a00b9a6eccb3 | Fetching all employees
+2026-02-03 11:46:16,582 | INFO | app.database | trace_id=f469ed129b43d9d6a9ac636040fd3249 | span_id=f7d721f50f508e95 | correlation_id=4541222e-4bf9-4006-8cb4-a00b9a6eccb3 | Database connection established
+2026-02-03 11:46:16,585 | INFO | app.services.employee_service | trace_id=f469ed129b43d9d6a9ac636040fd3249 | span_id=f7d721f50f508e95 | correlation_id=4541222e-4bf9-4006-8cb4-a00b9a6eccb3 | Fetched 2 employees
+
+2026-02-03 11:46:40,484 | INFO | app.services.employee_service | trace_id=9edaa95a931adf7dd95f0511c7c34c86 | span_id=d0b3e52dac670c00 | correlation_id=a30fdca5-f13f-4f1f-91b3-31e275f25977 | Fetching all employees
+2026-02-03 11:46:40,492 | INFO | app.database | trace_id=9edaa95a931adf7dd95f0511c7c34c86 | span_id=d0b3e52dac670c00 | correlation_id=a30fdca5-f13f-4f1f-91b3-31e275f25977 | Database connection established
+2026-02-03 11:46:40,494 | INFO | app.services.employee_service | trace_id=9edaa95a931adf7dd95f0511c7c34c86 | span_id=d0b3e52dac670c00 | correlation_id=a30fdca5-f13f-4f1f-91b3-31e275f25977 | Fetched 2 employees

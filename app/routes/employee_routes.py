@@ -1,7 +1,5 @@
-
 from fastapi import APIRouter
 from app.models.employee import Employee
-from app.logger import generate_correlation_id
 from app.services.employee_service import (
     create_employee,
     get_all_employees,
@@ -14,24 +12,35 @@ router = APIRouter(prefix="/employees", tags=["Employees"])
 
 @router.post("/")
 def add_employee(employee: Employee):
-    correlation_id = generate_correlation_id()
-    return create_employee(employee, correlation_id=correlation_id)
+    """
+    Create a new employee.
+    Correlation ID is auto-attached via middleware.
+    """
+    return create_employee(employee)
 
 
 @router.get("/")
 def list_employees():
-    correlation_id = generate_correlation_id()
-    return get_all_employees(correlation_id=correlation_id)
+    """
+    Get all employees.
+    Correlation ID is auto-attached via middleware.
+    """
+    return get_all_employees()
 
 
 @router.put("/{employee_id}")
 def modify_employee(employee_id: str, employee: Employee):
-    correlation_id = generate_correlation_id()
-    return update_employee(employee_id, employee, correlation_id=correlation_id)
+    """
+    Update an existing employee by ID.
+    Correlation ID is auto-attached via middleware.
+    """
+    return update_employee(employee_id, employee)
 
 
 @router.delete("/{employee_id}")
 def remove_employee(employee_id: str):
-    correlation_id = generate_correlation_id()
-    return delete_employee(employee_id, correlation_id=correlation_id)
-    
+    """
+    Delete an employee by ID.
+    Correlation ID is auto-attached via middleware.
+    """
+    return delete_employee(employee_id)

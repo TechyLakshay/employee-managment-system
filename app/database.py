@@ -1,11 +1,10 @@
 import mysql.connector
 from mysql.connector import Error
-from app.logger import generate_correlation_id, get_logger
+from app.observability.logger import get_logger
 
 logger = get_logger(__name__)
 
 def get_db_connection():
-    correlation_id = generate_correlation_id()
     try:
         connection = mysql.connector.connect(
             host="localhost",
@@ -20,4 +19,3 @@ def get_db_connection():
     except Error as e:
         logger.error(f"Database connection failed: {e}")
         return None
-

@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "disable_existing_loggers": false,
+  "formatters": {
+    "default": {
+      "format": "%(asctime)s | %(levelname)s | %(name)s | trace_id=%(otelTraceID)s | span_id=%(otelSpanID)s | correlation_id=%(correlation_id)s | %(message)s"
+    }
+  },
+  "handlers": {
+    "console": {
+      "class": "logging.StreamHandler",
+      "formatter": "default",
+      "filters": [
+        "only_info_and_error"
+      ]
+    },
+    "file": {
+      "class": "logging.FileHandler",
+      "filename": "app/logs/app.log",
+      "formatter": "default",
+      "mode": "a",
+      "encoding": "utf-8",
+      "delay": false,
+      "filters": [
+        "only_info_and_error"
+      ]
+    }
+  },
+  "root": {
+    "level": "INFO",
+    "handlers": [
+      "console",
+      "file"
+    ]
+  },
+  "filters": {
+    "only_info_and_error": {
+      "()": "app.observability.logger.LevelFilter",
+      "levels": [
+        "INFO",
+        "ERROR"
+      ]
+    }
+  }
+}
